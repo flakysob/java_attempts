@@ -1,17 +1,18 @@
+//kaynak: https://emrecelen.com.tr/javada-kalitim-nedir/
+
 package ders28;
 
 public class ders28 
 {
-
 	public static void main(String[] args) 
 	{
+		Employe isci = new Employe("Taha","Doðan");
+		GeneralManager mudur = new GeneralManager("Aslý","Doðan");
 		
-		Calisan isci = new Calisan("Ömer Sefa Baran","Biliþim",3000);
-		isci.goster();
-		
-		
-		Yonetici mudur = new Yonetici("Taha Doðan","Mühendis",6000);
-		mudur.goster();
+		System.out.println("---------------------------");
+		isci.bilgiGoster();
+		System.out.println("---------------------------");
+		mudur.bilgiGoster();
 	}
 
 }
